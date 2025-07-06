@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    background-color: #e4e2dd;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+main {
+    background-color: bisque;
+}
+
+.section-presentacion {
+    display: flex;
+    /*eje x*/
+    justify-content: center;
+    /*eje y*/
+    align-items: center;
+}
+
+/* para colocar nombre y apallido en una sola linea.
+tuve que dividir en elementos html para hacer 
+responsible disign*/
+.name h1 {
+    display: inline-block;
+}
+
+.puestos {
+    padding-left: 23%;
+}
+
+
+
+.foto-perfil img {
+    border-radius: 50%;
+}
+
+.section-sobre-mi div {
+    padding: 10%;
+    color: blue;
+    background-color: rgba(245, 245, 220, 0.89);
+}
+
+.section-educacion {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-certificacion-formacion {
+    background-color: burlywood;
+    padding: 20px;
+}
+
+
+.imagenes-certificados {
+    padding: 20px;
+    background-color: aquamarine;
+    /*el contenedor "section-certificacion-formacion" 
+    se va a comportar como una grilla*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.bloque {
+    background-color: #cdf9ffab;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.cert {
+    width: 500px;
+}
+
+.section-skills {
+    background-color: rgba(255, 166, 0, 0.281);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-contacto {
+    background-color: rgba(240, 226, 182, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub-bloque-contacto {
+    padding-left: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+    .nombre {
+        padding-left: 100px;
+    }
+
+    .apellido {
+        padding-left: 100px;
+    }
+
+    .foto-perfil img {
+        width: 350px;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .puestos {
+        padding-left: 80px;
+    }
+
+    .section-certificacion-formacion {
+        background-color: burlywood;
+        padding: 10px;
+    }
+
+    .imagenes-certificados {
+        padding: 0px;
+        background-color: aquamarine;
+        /*el contenedor "section-certificacion-formacion" 
+        se va a comportar como una grilla*/
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .bloque {
+        width: 300px;
+        background-color: #cdf9ffab;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cert {
+        width: 300px;
+    }
+}
+
+
+
+@media (max-width: 880px) {
+
+    .section-certificacion-formacion {
+        background-color: burlywood;
+        padding: 10px;
+    }
+
+    .imagenes-certificados {
+        padding: 10px;
+        background-color: aquamarine;
+        /*el contenedor "section-certificacion-formacion" 
+        se va a comportar como una grilla*/
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+    }
+
+    .bloque {
+        width: 300px;
+        background-color: #cdf9ffab;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cert {
+        width: 300px;
+    }
+}
